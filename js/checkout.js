@@ -128,3 +128,12 @@ function processOrder() {
     alert('Order Placed Successfully! Thank you for your purchase.');
     window.location.href = 'index.html';
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+});

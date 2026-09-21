@@ -123,4 +123,11 @@ function removeFromCart(e) {
 document.addEventListener("DOMContentLoaded", function () {
   displayCartItems();
   updateCartCount();
+
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
 });
